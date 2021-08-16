@@ -10,11 +10,12 @@
 		64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */; };
 		64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */; };
 		64B9CC3526CB2C2E0064F5E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3426CB2C2E0064F5E7 /* ViewController.swift */; };
-		64B9CC3826CB2C2E0064F5E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3626CB2C2E0064F5E7 /* Main.storyboard */; };
 		64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3926CB2C310064F5E7 /* Assets.xcassets */; };
 		64B9CC3D26CB2C310064F5E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */; };
 		64B9CC4826CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC4726CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift */; };
 		64B9CC5326CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */; };
+		64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */; };
+		64B9CC6626CB2DAE0064F5E7 /* EventsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		64B9CC3426CB2C2E0064F5E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64B9CC3726CB2C2E0064F5E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64B9CC3926CB2C310064F5E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64B9CC3C26CB2C310064F5E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64B9CC3E26CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		64B9CC4E26CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSWoopSicrediEventListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWoopSicrediEventListUITests.swift; sourceTree = "<group>"; };
 		64B9CC5426CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +104,11 @@
 				64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */,
 				64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */,
 				64B9CC3426CB2C2E0064F5E7 /* ViewController.swift */,
-				64B9CC3626CB2C2E0064F5E7 /* Main.storyboard */,
 				64B9CC3926CB2C310064F5E7 /* Assets.xcassets */,
 				64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */,
 				64B9CC3E26CB2C310064F5E7 /* Info.plist */,
+				64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */,
+				64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */,
 			);
 			path = iOSWoopSicrediEventList;
 			sourceTree = "<group>";
@@ -233,7 +236,7 @@
 			files = (
 				64B9CC3D26CB2C310064F5E7 /* LaunchScreen.storyboard in Resources */,
 				64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */,
-				64B9CC3826CB2C2E0064F5E7 /* Main.storyboard in Resources */,
+				64B9CC6626CB2DAE0064F5E7 /* EventsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +263,7 @@
 			files = (
 				64B9CC3526CB2C2E0064F5E7 /* ViewController.swift in Sources */,
 				64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */,
+				64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */,
 				64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		64B9CC3626CB2C2E0064F5E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64B9CC3726CB2C2E0064F5E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
