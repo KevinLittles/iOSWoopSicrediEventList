@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */; };
 		64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */; };
-		64B9CC3526CB2C2E0064F5E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3426CB2C2E0064F5E7 /* ViewController.swift */; };
 		64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3926CB2C310064F5E7 /* Assets.xcassets */; };
 		64B9CC3D26CB2C310064F5E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */; };
 		64B9CC4826CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC4726CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift */; };
@@ -39,7 +38,6 @@
 		64B9CC2D26CB2C2E0064F5E7 /* iOSWoopSicrediEventList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWoopSicrediEventList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64B9CC3426CB2C2E0064F5E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64B9CC3926CB2C310064F5E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64B9CC3C26CB2C310064F5E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64B9CC3E26CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,14 +99,11 @@
 		64B9CC2F26CB2C2E0064F5E7 /* iOSWoopSicrediEventList */ = {
 			isa = PBXGroup;
 			children = (
-				64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */,
-				64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */,
-				64B9CC3426CB2C2E0064F5E7 /* ViewController.swift */,
-				64B9CC3926CB2C310064F5E7 /* Assets.xcassets */,
-				64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */,
-				64B9CC3E26CB2C310064F5E7 /* Info.plist */,
-				64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */,
-				64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */,
+				64B9CC6B26CB2F5A0064F5E7 /* Common */,
+				64B9CC6A26CB2F540064F5E7 /* Api */,
+				64B9CC6926CB2F4F0064F5E7 /* View */,
+				64B9CC6826CB2F390064F5E7 /* ViewModel */,
+				64B9CC6726CB2F330064F5E7 /* Model */,
 			);
 			path = iOSWoopSicrediEventList;
 			sourceTree = "<group>";
@@ -129,6 +124,56 @@
 				64B9CC5426CB2C310064F5E7 /* Info.plist */,
 			);
 			path = iOSWoopSicrediEventListUITests;
+			sourceTree = "<group>";
+		};
+		64B9CC6726CB2F330064F5E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64B9CC6826CB2F390064F5E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64B9CC6926CB2F4F0064F5E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */,
+				64B9CC6C26CB2FBB0064F5E7 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64B9CC6A26CB2F540064F5E7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		64B9CC6B26CB2F5A0064F5E7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				64B9CC3E26CB2C310064F5E7 /* Info.plist */,
+				64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */,
+				64B9CC3926CB2C310064F5E7 /* Assets.xcassets */,
+				64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */,
+				64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		64B9CC6C26CB2FBB0064F5E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B9CC3526CB2C2E0064F5E7 /* ViewController.swift in Sources */,
 				64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */,
 				64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */,
 				64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */,
