@@ -14,6 +14,8 @@
 		64A9368626CC100200AE9ADC /* EventAPICalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368526CC100200AE9ADC /* EventAPICalling.swift */; };
 		64A9368826CC140F00AE9ADC /* CheckinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368726CC140F00AE9ADC /* CheckinModel.swift */; };
 		64A9368A26CC253000AE9ADC /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368926CC253000AE9ADC /* EventHandler.swift */; };
+		64A9368E26CC417100AE9ADC /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368D26CC417100AE9ADC /* EventDetailViewController.swift */; };
+		64A9369526CC69A100AE9ADC /* EventDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9369426CC69A100AE9ADC /* EventDetailCoordinator.swift */; };
 		64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */; };
 		64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */; };
 		64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3926CB2C310064F5E7 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		64A9368526CC100200AE9ADC /* EventAPICalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPICalling.swift; sourceTree = "<group>"; };
 		64A9368726CC140F00AE9ADC /* CheckinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinModel.swift; sourceTree = "<group>"; };
 		64A9368926CC253000AE9ADC /* EventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
+		64A9368D26CC417100AE9ADC /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		64A9369426CC69A100AE9ADC /* EventDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCoordinator.swift; sourceTree = "<group>"; };
 		64B9CC2D26CB2C2E0064F5E7 /* iOSWoopSicrediEventList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWoopSicrediEventList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,15 @@
 				05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64A9369326CC538B00AE9ADC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */,
+				64A9369426CC69A100AE9ADC /* EventDetailCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		64B9CC2426CB2C2E0064F5E7 = {
@@ -208,7 +221,7 @@
 				64B9CC3926CB2C310064F5E7 /* Assets.xcassets */,
 				64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */,
 				64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */,
-				64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */,
+				64A9369326CC538B00AE9ADC /* Coordinator */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -217,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */,
+				64A9368D26CC417100AE9ADC /* EventDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,7 +492,9 @@
 				64A9368626CC100200AE9ADC /* EventAPICalling.swift in Sources */,
 				64A9368826CC140F00AE9ADC /* CheckinModel.swift in Sources */,
 				64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */,
+				64A9368E26CC417100AE9ADC /* EventDetailViewController.swift in Sources */,
 				64A9368226CB58C500AE9ADC /* EventModel.swift in Sources */,
+				64A9369526CC69A100AE9ADC /* EventDetailCoordinator.swift in Sources */,
 				64A9368426CC0BC700AE9ADC /* APIRequest.swift in Sources */,
 				64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */,
 			);
