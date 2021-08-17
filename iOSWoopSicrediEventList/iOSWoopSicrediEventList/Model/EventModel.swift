@@ -12,15 +12,6 @@
 
 import Foundation
 
-// MARK: - ListOfEvents
-struct ListOfEventsModel: Codable {
-    let result: [EventModel]?
-    
-    private enum CodingKeys: String, CodingKey {
-        case result
-    }
-}
-
 // MARK: - Event
 struct EventModel: Codable {
     let people: [Person]

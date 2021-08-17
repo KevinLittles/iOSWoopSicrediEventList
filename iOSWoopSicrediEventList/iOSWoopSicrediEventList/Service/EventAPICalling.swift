@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class APICalling {
+class EventAPICalling {
 
     func getListOfEvents<T: Codable>(apiRequest: APIRequest) -> Observable<T> {
         
@@ -16,8 +16,8 @@ class APICalling {
             let request = apiRequest.request()
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 do {
-                    let model: ListOfEventsModel = try JSONDecoder().decode(ListOfEventsModel.self, from: data ?? Data())
-                    observer.onNext( model.result as! T)
+                    let model: [EventModel] = try JSONDecoder().decode([EventModel].self, from: data ?? Data())
+                    observer.onNext( model as! T)
                 } catch let error {
                     observer.onError(error)
                 }

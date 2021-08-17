@@ -6,11 +6,25 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class EventsTableViewController: UITableViewController {
-        
+    
+    let listOfEventsHandler = ListOfEventsHandler()
+    let eventDetailHandler = EventDetailHandler()
+    let checkinHandler = CheckinHandler()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = nil
+        tableView.dataSource = nil
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        _ = listOfEventsHandler.getListOfEvents().bind(to: tableView.rx.items(cellIdentifier: "cell")) { ( row, model, cell) in
+            cell.textLabel?.text = model.title
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -21,15 +35,15 @@ class EventsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
