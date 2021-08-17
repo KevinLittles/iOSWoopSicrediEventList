@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		117A8A9D6220C840BFF872E9 /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C29371CAD7CB4A75CACBB /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework */; };
 		35729630F379F8BC578278D9 /* Pods_iOSWoopSicrediEventList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78349B10580D219DDE13D2D /* Pods_iOSWoopSicrediEventList.framework */; };
+		64A9368226CB58C500AE9ADC /* ListOfEventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368126CB58C500AE9ADC /* ListOfEventsModel.swift */; };
+		64A9368426CC0BC700AE9ADC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368326CC0BC700AE9ADC /* APIRequest.swift */; };
+		64A9368626CC100200AE9ADC /* EventAPICalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368526CC100200AE9ADC /* EventAPICalling.swift */; };
+		64A9368826CC140F00AE9ADC /* CheckinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9368726CC140F00AE9ADC /* CheckinModel.swift */; };
 		64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */; };
 		64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */; };
 		64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3926CB2C310064F5E7 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		501C54F476E5324F664386ED /* Pods-iOSWoopSicrediEventListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventListTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventListTests/Pods-iOSWoopSicrediEventListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5620F6AEC8B183C3D6DB84BB /* Pods-iOSWoopSicrediEventListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventListTests.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventListTests/Pods-iOSWoopSicrediEventListTests.release.xcconfig"; sourceTree = "<group>"; };
 		58CC01CE19AB83777670BD15 /* Pods-iOSWoopSicrediEventList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList/Pods-iOSWoopSicrediEventList.release.xcconfig"; sourceTree = "<group>"; };
+		64A9368126CB58C500AE9ADC /* ListOfEventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfEventsModel.swift; sourceTree = "<group>"; };
+		64A9368326CC0BC700AE9ADC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		64A9368526CC100200AE9ADC /* EventAPICalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAPICalling.swift; sourceTree = "<group>"; };
+		64A9368726CC140F00AE9ADC /* CheckinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinModel.swift; sourceTree = "<group>"; };
 		64B9CC2D26CB2C2E0064F5E7 /* iOSWoopSicrediEventList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWoopSicrediEventList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				64B9CC6B26CB2F5A0064F5E7 /* Common */,
-				64B9CC6A26CB2F540064F5E7 /* Api */,
+				64B9CC6A26CB2F540064F5E7 /* Service */,
 				64B9CC6926CB2F4F0064F5E7 /* View */,
 				64B9CC6826CB2F390064F5E7 /* ViewModel */,
 				64B9CC6726CB2F330064F5E7 /* Model */,
@@ -158,6 +166,8 @@
 		64B9CC6726CB2F330064F5E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				64A9368126CB58C500AE9ADC /* ListOfEventsModel.swift */,
+				64A9368726CC140F00AE9ADC /* CheckinModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,11 +188,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		64B9CC6A26CB2F540064F5E7 /* Api */ = {
+		64B9CC6A26CB2F540064F5E7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				64A9368326CC0BC700AE9ADC /* APIRequest.swift */,
+				64A9368526CC100200AE9ADC /* EventAPICalling.swift */,
 			);
-			path = Api;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		64B9CC6B26CB2F5A0064F5E7 /* Common */ = {
@@ -459,7 +471,11 @@
 			files = (
 				64B9CC6E26CB50F20064F5E7 /* AppCoordinator.swift in Sources */,
 				64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */,
+				64A9368626CC100200AE9ADC /* EventAPICalling.swift in Sources */,
+				64A9368826CC140F00AE9ADC /* CheckinModel.swift in Sources */,
 				64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */,
+				64A9368226CB58C500AE9ADC /* ListOfEventsModel.swift in Sources */,
+				64A9368426CC0BC700AE9ADC /* APIRequest.swift in Sources */,
 				64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
