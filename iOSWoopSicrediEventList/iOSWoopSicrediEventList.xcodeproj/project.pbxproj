@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		64B9CC5326CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */; };
 		64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */; };
 		64B9CC6626CB2DAE0064F5E7 /* EventsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */; };
+		64B9CC6E26CB50F20064F5E7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */; };
 		AF6B9476134E8AB194CB80EF /* Pods_iOSWoopSicrediEventListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		64B9CC5426CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsTableViewController.xib; sourceTree = "<group>"; };
+		64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		66D294445C38C39D3DC67704 /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		751DFEC937A025C8EE8FCC4C /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		800C29371CAD7CB4A75CACBB /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				64B9CC3926CB2C310064F5E7 /* Assets.xcassets */,
 				64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */,
 				64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */,
+				64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -213,7 +216,6 @@
 				501C54F476E5324F664386ED /* Pods-iOSWoopSicrediEventListTests.debug.xcconfig */,
 				5620F6AEC8B183C3D6DB84BB /* Pods-iOSWoopSicrediEventListTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -455,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B9CC6E26CB50F20064F5E7 /* AppCoordinator.swift in Sources */,
 				64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */,
 				64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */,
 				64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */,
