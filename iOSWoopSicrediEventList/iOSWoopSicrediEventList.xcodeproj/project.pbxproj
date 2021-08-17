@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117A8A9D6220C840BFF872E9 /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C29371CAD7CB4A75CACBB /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework */; };
+		35729630F379F8BC578278D9 /* Pods_iOSWoopSicrediEventList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78349B10580D219DDE13D2D /* Pods_iOSWoopSicrediEventList.framework */; };
 		64B9CC3126CB2C2E0064F5E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */; };
 		64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */; };
 		64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3926CB2C310064F5E7 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 		64B9CC5326CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */; };
 		64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */; };
 		64B9CC6626CB2DAE0064F5E7 /* EventsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */; };
+		AF6B9476134E8AB194CB80EF /* Pods_iOSWoopSicrediEventListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSWoopSicrediEventListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		501C54F476E5324F664386ED /* Pods-iOSWoopSicrediEventListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventListTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventListTests/Pods-iOSWoopSicrediEventListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5620F6AEC8B183C3D6DB84BB /* Pods-iOSWoopSicrediEventListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventListTests.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventListTests/Pods-iOSWoopSicrediEventListTests.release.xcconfig"; sourceTree = "<group>"; };
+		58CC01CE19AB83777670BD15 /* Pods-iOSWoopSicrediEventList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList/Pods-iOSWoopSicrediEventList.release.xcconfig"; sourceTree = "<group>"; };
 		64B9CC2D26CB2C2E0064F5E7 /* iOSWoopSicrediEventList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSWoopSicrediEventList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9CC3026CB2C2E0064F5E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		64B9CC5426CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsTableViewController.xib; sourceTree = "<group>"; };
+		66D294445C38C39D3DC67704 /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		751DFEC937A025C8EE8FCC4C /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		800C29371CAD7CB4A75CACBB /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78349B10580D219DDE13D2D /* Pods_iOSWoopSicrediEventList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSWoopSicrediEventList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64B405F52ABAC1BB790C82C /* Pods-iOSWoopSicrediEventList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList.debug.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList/Pods-iOSWoopSicrediEventList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35729630F379F8BC578278D9 /* Pods_iOSWoopSicrediEventList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6B9476134E8AB194CB80EF /* Pods_iOSWoopSicrediEventListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117A8A9D6220C840BFF872E9 /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DCA700384062A02F8A97727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E78349B10580D219DDE13D2D /* Pods_iOSWoopSicrediEventList.framework */,
+				800C29371CAD7CB4A75CACBB /* Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests.framework */,
+				05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64B9CC2426CB2C2E0064F5E7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				64B9CC4626CB2C310064F5E7 /* iOSWoopSicrediEventListTests */,
 				64B9CC5126CB2C310064F5E7 /* iOSWoopSicrediEventListUITests */,
 				64B9CC2E26CB2C2E0064F5E7 /* Products */,
+				AD5BAF54CBF19FA9FAAFE966 /* Pods */,
+				5DCA700384062A02F8A97727 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +203,20 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		AD5BAF54CBF19FA9FAAFE966 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F64B405F52ABAC1BB790C82C /* Pods-iOSWoopSicrediEventList.debug.xcconfig */,
+				58CC01CE19AB83777670BD15 /* Pods-iOSWoopSicrediEventList.release.xcconfig */,
+				751DFEC937A025C8EE8FCC4C /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig */,
+				66D294445C38C39D3DC67704 /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig */,
+				501C54F476E5324F664386ED /* Pods-iOSWoopSicrediEventListTests.debug.xcconfig */,
+				5620F6AEC8B183C3D6DB84BB /* Pods-iOSWoopSicrediEventListTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64B9CC5726CB2C310064F5E7 /* Build configuration list for PBXNativeTarget "iOSWoopSicrediEventList" */;
 			buildPhases = (
+				472120CC929B788D7DAD749D /* [CP] Check Pods Manifest.lock */,
 				64B9CC2926CB2C2E0064F5E7 /* Sources */,
 				64B9CC2A26CB2C2E0064F5E7 /* Frameworks */,
 				64B9CC2B26CB2C2E0064F5E7 /* Resources */,
+				E9FAE0B81B5C0C9DF9C49765 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64B9CC5A26CB2C310064F5E7 /* Build configuration list for PBXNativeTarget "iOSWoopSicrediEventListTests" */;
 			buildPhases = (
+				1C80CF3ABEEEECB41D91C980 /* [CP] Check Pods Manifest.lock */,
 				64B9CC3F26CB2C310064F5E7 /* Sources */,
 				64B9CC4026CB2C310064F5E7 /* Frameworks */,
 				64B9CC4126CB2C310064F5E7 /* Resources */,
@@ -218,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64B9CC5D26CB2C310064F5E7 /* Build configuration list for PBXNativeTarget "iOSWoopSicrediEventListUITests" */;
 			buildPhases = (
+				1D180A105D6041FA411B4138 /* [CP] Check Pods Manifest.lock */,
 				64B9CC4A26CB2C310064F5E7 /* Sources */,
 				64B9CC4B26CB2C310064F5E7 /* Frameworks */,
 				64B9CC4C26CB2C310064F5E7 /* Resources */,
+				B6EE838036B3D7FA1CD474E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +346,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C80CF3ABEEEECB41D91C980 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSWoopSicrediEventListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D180A105D6041FA411B4138 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		472120CC929B788D7DAD749D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSWoopSicrediEventList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EE838036B3D7FA1CD474E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9FAE0B81B5C0C9DF9C49765 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSWoopSicrediEventList/Pods-iOSWoopSicrediEventList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSWoopSicrediEventList/Pods-iOSWoopSicrediEventList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSWoopSicrediEventList/Pods-iOSWoopSicrediEventList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64B9CC2926CB2C2E0064F5E7 /* Sources */ = {
@@ -473,6 +622,7 @@
 		};
 		64B9CC5826CB2C310064F5E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64B405F52ABAC1BB790C82C /* Pods-iOSWoopSicrediEventList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +642,7 @@
 		};
 		64B9CC5926CB2C310064F5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CC01CE19AB83777670BD15 /* Pods-iOSWoopSicrediEventList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,6 +662,7 @@
 		};
 		64B9CC5B26CB2C310064F5E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501C54F476E5324F664386ED /* Pods-iOSWoopSicrediEventListTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +685,7 @@
 		};
 		64B9CC5C26CB2C310064F5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5620F6AEC8B183C3D6DB84BB /* Pods-iOSWoopSicrediEventListTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +708,7 @@
 		};
 		64B9CC5E26CB2C310064F5E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751DFEC937A025C8EE8FCC4C /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +729,7 @@
 		};
 		64B9CC5F26CB2C310064F5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D294445C38C39D3DC67704 /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

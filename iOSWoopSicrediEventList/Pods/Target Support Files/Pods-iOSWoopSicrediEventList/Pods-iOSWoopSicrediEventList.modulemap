@@ -1,0 +1,6 @@
+framework module Pods_iOSWoopSicrediEventList {
+  umbrella header "Pods-iOSWoopSicrediEventList-umbrella.h"
+
+  export *
+  module * { export * }
+}

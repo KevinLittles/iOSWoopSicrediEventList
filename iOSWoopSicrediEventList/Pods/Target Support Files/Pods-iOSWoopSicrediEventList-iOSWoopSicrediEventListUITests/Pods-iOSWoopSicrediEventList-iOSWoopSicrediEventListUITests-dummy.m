@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests : NSObject
+@end
+@implementation PodsDummy_Pods_iOSWoopSicrediEventList_iOSWoopSicrediEventListUITests
+@end
