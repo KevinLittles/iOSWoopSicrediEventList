@@ -51,7 +51,43 @@ class APICalling {
         }
     }
     
-    func postCheckin () {
+    func postCheckin<T: Codable>(apiRequest: APIRequest, checkinModel: CheckinModel) -> Observable<T> {
         
-    }
+        return Observable<T>.create { observer in
+            var request = apiRequest.request()
+            
+            do {
+                let encoder = JSONEncoder()
+                let checkinModelEncoded = try encoder.encode(checkinModel)
+                
+                let jsonData = try JSONSerialization.data(withJSONObject: checkinModelEncoded)
+                
+                request.httpBody = jsonData
+            } catch {
+                print(error)
+            }
+            
+            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                
+                do {
+                    if let safeData = data {
+                        let responseJson = try JSONSerialization.jsonObject(with: safeData, options: [])
+                        
+                        print(responseJson)
+                        observer.onNext(responseJson as! T)
+                    }
+                } catch let error {
+                    observer.onError(error)
+                }
+                observer.onCompleted()
+            }
+            task.resume()
+            
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+
+
+       }
 }
