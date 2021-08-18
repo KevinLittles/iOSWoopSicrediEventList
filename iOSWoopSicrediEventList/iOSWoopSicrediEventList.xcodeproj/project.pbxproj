@@ -23,7 +23,6 @@
 		64B9CC4826CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC4726CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift */; };
 		64B9CC5326CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */; };
 		64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */; };
-		64B9CC6626CB2DAE0064F5E7 /* EventsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */; };
 		64B9CC6E26CB50F20064F5E7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */; };
 		AF6B9476134E8AB194CB80EF /* Pods_iOSWoopSicrediEventListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */; };
 /* End PBXBuildFile section */
@@ -70,7 +69,6 @@
 		64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWoopSicrediEventListUITests.swift; sourceTree = "<group>"; };
 		64B9CC5426CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
-		64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsTableViewController.xib; sourceTree = "<group>"; };
 		64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		66D294445C38C39D3DC67704 /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		751DFEC937A025C8EE8FCC4C /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,8 +196,8 @@
 		64B9CC6926CB2F4F0064F5E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				64B9CC6426CB2DAE0064F5E7 /* EventsTableViewController.xib */,
-				64B9CC6C26CB2FBB0064F5E7 /* Controller */,
+				64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */,
+				64A9368D26CC417100AE9ADC /* EventDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,15 +222,6 @@
 				64A9369326CC538B00AE9ADC /* Coordinator */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		64B9CC6C26CB2FBB0064F5E7 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */,
-				64A9368D26CC417100AE9ADC /* EventDetailViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		AD5BAF54CBF19FA9FAAFE966 /* Pods */ = {
@@ -358,7 +347,6 @@
 			files = (
 				64B9CC3D26CB2C310064F5E7 /* LaunchScreen.storyboard in Resources */,
 				64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */,
-				64B9CC6626CB2DAE0064F5E7 /* EventsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

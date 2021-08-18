@@ -13,10 +13,12 @@ class EventsTableViewController: UITableViewController {
     
     var moveToNextScreenHandler: (() -> Void)?
     
+    
     let listOfEventsHandler = ListOfEventsHandler()
     let checkinHandler = CheckinHandler()
     
     private let bag = DisposeBag()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
