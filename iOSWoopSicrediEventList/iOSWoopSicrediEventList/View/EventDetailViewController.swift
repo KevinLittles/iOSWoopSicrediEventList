@@ -18,9 +18,13 @@ class EventDetailViewController: UIViewController {
     
     var eventImageView = UIImageView()
     var eventTitleLabel = UILabel()
+    var eventDataLabel = UILabel()
+    var eventPriceLabel = UILabel()
+    var eventLocalLabel = UILabel()
     var eventDescriptionLabel = UILabel()
     var eventPriceTextView = UITextView()
     var eventDateTextView = UITextView()
+    let horizontalStackView = UIStackView()
     
     let shareButton = UIButton()
     let checkinButton = UIButton()
@@ -77,6 +81,7 @@ class EventDetailViewController: UIViewController {
     
     func setupTextViewsAndLabels() {
         setupEventTitleLabel()
+        setupHorizontalStackView()
         setupEventDescriptionLabel()
         setupEventPriceTextView()
         setupEventDateTextView()
@@ -95,6 +100,53 @@ class EventDetailViewController: UIViewController {
             eventTitleLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
             eventTitleLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 1/6).isActive = true
         }
+        
+        func setupHorizontalStackView() {
+            setupEventDataLabel()
+            setupEventPriceLabel()
+            setupEventLocalLabel()
+            
+            horizontalStackView.axis = .horizontal
+            horizontalStackView.alignment = .fill // .leading .firstBaseline .center .trailing .lastBaseline
+            horizontalStackView.distribution = .fillEqually // .fillEqually .fillProportionally .equalSpacing .equalCentering
+            horizontalStackView.spacing = 5
+            horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+            contentView.addSubview(horizontalStackView)
+            
+            //horizontalStackView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+            horizontalStackView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+            horizontalStackView.topAnchor.constraint(equalTo: eventTitleLabel.bottomAnchor).isActive = true
+            
+            horizontalStackView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
+            horizontalStackView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 1/8).isActive = true
+            
+            func setupEventDataLabel() {
+                eventDataLabel.text = "data"
+                eventDataLabel.sizeToFit()
+                eventDataLabel.textColor = UIColor.white
+                eventDataLabel.translatesAutoresizingMaskIntoConstraints = false
+                horizontalStackView.addArrangedSubview(eventDataLabel)
+                
+            }
+            func setupEventPriceLabel() {
+                eventPriceLabel.text = "price"
+                eventPriceLabel.sizeToFit()
+                eventPriceLabel.textColor = UIColor.white
+                eventPriceLabel.translatesAutoresizingMaskIntoConstraints = false
+                horizontalStackView.addArrangedSubview(eventPriceLabel)
+                
+            }
+            func setupEventLocalLabel() {
+                eventLocalLabel.text = "local"
+                eventLocalLabel.sizeToFit()
+                eventLocalLabel.textColor = UIColor.white
+                eventLocalLabel.translatesAutoresizingMaskIntoConstraints = false
+                horizontalStackView.addArrangedSubview(eventLocalLabel)
+                
+            }
+        }
+        
         func setupEventDescriptionLabel() {
             eventDescriptionLabel.text = "descrição"
             eventDescriptionLabel.numberOfLines = 0
@@ -104,7 +156,7 @@ class EventDetailViewController: UIViewController {
             contentView.addSubview(eventDescriptionLabel)
             
             eventDescriptionLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-            eventDescriptionLabel.topAnchor.constraint(equalTo: eventTitleLabel.bottomAnchor, constant: 25).isActive = true
+            eventDescriptionLabel.topAnchor.constraint(equalTo: horizontalStackView.bottomAnchor, constant: 25).isActive = true
             
             eventDescriptionLabel.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
             eventDescriptionLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 1/6).isActive = true
