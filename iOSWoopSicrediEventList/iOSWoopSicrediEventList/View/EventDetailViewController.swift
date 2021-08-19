@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import MapKit
 
 class EventDetailViewController: UIViewController {
 
-    var eventDetailHandler: EventDetailHandler?
+    var eventDetailHandler = EventDetailHandler()
     
     let scrollView = UIScrollView()
     let contentView = UIView()
@@ -31,6 +32,9 @@ class EventDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        eventDetailHandler.delegate = self
+        tableView.dataSource = self
         
         setupScrollView()
         setupEventImageView()
@@ -68,7 +72,9 @@ class EventDetailViewController: UIViewController {
     }
     
     func setupEventImageView() {
-        eventImageView.image = UIImage()
+        if let image = URL(string: EventDetailHandler.event!.image) {
+            eventImageView.load(url: image)
+        }
         eventImageView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(eventImageView)
         
@@ -83,11 +89,9 @@ class EventDetailViewController: UIViewController {
         setupEventTitleLabel()
         setupHorizontalStackView()
         setupEventDescriptionLabel()
-        setupEventPriceTextView()
-        setupEventDateTextView()
         
         func setupEventTitleLabel() {
-            eventTitleLabel.text = "título"
+            eventTitleLabel.text = EventDetailHandler.event?.title
             eventTitleLabel.numberOfLines = 0
             eventTitleLabel.sizeToFit()
             eventTitleLabel.textColor = UIColor.white
@@ -102,7 +106,6 @@ class EventDetailViewController: UIViewController {
         }
         
         func setupHorizontalStackView() {
-            setupEventDataLabel()
             setupEventPriceLabel()
             setupEventLocalLabel()
             
@@ -121,16 +124,9 @@ class EventDetailViewController: UIViewController {
             horizontalStackView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
             horizontalStackView.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 1/8).isActive = true
             
-            func setupEventDataLabel() {
-                eventDataLabel.text = "data"
-                eventDataLabel.sizeToFit()
-                eventDataLabel.textColor = UIColor.white
-                eventDataLabel.translatesAutoresizingMaskIntoConstraints = false
-                horizontalStackView.addArrangedSubview(eventDataLabel)
-                
-            }
+            
             func setupEventPriceLabel() {
-                eventPriceLabel.text = "price"
+                eventPriceLabel.text = "\((EventDetailHandler.event?.price)!)" + " $"
                 eventPriceLabel.sizeToFit()
                 eventPriceLabel.textColor = UIColor.white
                 eventPriceLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -138,7 +134,8 @@ class EventDetailViewController: UIViewController {
                 
             }
             func setupEventLocalLabel() {
-                eventLocalLabel.text = "local"
+
+                eventDetailHandler.getAddressFromLatLon(pdblLatitude: EventDetailHandler.event!.latitude, withLongitude: EventDetailHandler.event!.longitude)
                 eventLocalLabel.sizeToFit()
                 eventLocalLabel.textColor = UIColor.white
                 eventLocalLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -148,7 +145,7 @@ class EventDetailViewController: UIViewController {
         }
         
         func setupEventDescriptionLabel() {
-            eventDescriptionLabel.text = "descrição"
+            eventDescriptionLabel.text = EventDetailHandler.event?.eventDescription
             eventDescriptionLabel.numberOfLines = 0
             eventDescriptionLabel.sizeToFit()
             eventDescriptionLabel.textColor = UIColor.white
@@ -162,22 +159,18 @@ class EventDetailViewController: UIViewController {
             eventDescriptionLabel.heightAnchor.constraint(equalTo: contentView.heightAnchor, multiplier: 1/6).isActive = true
             
         }
-        func setupEventPriceTextView() {
-            
-        }
-        func setupEventDateTextView() {
-            
-        }
     }
     
     func setupTableView() {
         contentView.addSubview(tableView)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         tableView.topAnchor.constraint(equalTo: eventDescriptionLabel.bottomAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         tableView.heightAnchor.constraint(equalTo: contentView.heightAnchor).isActive = true
+        
       }
     
     func setupButtons() {
@@ -191,5 +184,30 @@ class EventDetailViewController: UIViewController {
             
         }
     }
-
+    
 }
+
+extension EventDetailViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        (EventDetailHandler.event?.people.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = EventDetailHandler.event?.people[indexPath.row].name
+        
+        return cell
+    }
+    
+    
+}
+
+extension EventDetailViewController: EventDetailHandlerDelegate {
+    
+    func didGetAddressFromLatLon(city: String) {
+        eventLocalLabel.text = city
+    }
+}
+

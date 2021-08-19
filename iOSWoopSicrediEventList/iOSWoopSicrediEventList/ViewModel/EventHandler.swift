@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import CoreLocation
 
 //showEventDetail
 
@@ -22,9 +23,14 @@ struct ListOfEventsHandler {
     
 }
 
+protocol EventDetailHandlerDelegate {
+    func didGetAddressFromLatLon(city: String)
+}
+
 struct EventDetailHandler {
     
     static var event: EventModel?
+    var delegate: EventDetailHandlerDelegate?
     
     private let apiCalling = EventAPICalling()
     
@@ -36,6 +42,46 @@ struct EventDetailHandler {
         let result: Observable<[EventModel]> = self.apiCalling.getEvent(apiRequest: getApiRequest())
         
         return result
+    }
+    
+    func getAddressFromLatLon(pdblLatitude: Double, withLongitude pdblLongitude: Double) {
+        var center : CLLocationCoordinate2D = CLLocationCoordinate2D()
+
+        let ceo: CLGeocoder = CLGeocoder()
+        center.latitude = pdblLatitude
+        center.longitude = pdblLongitude
+
+        let loc: CLLocation = CLLocation(latitude:center.latitude, longitude: center.longitude)
+
+        ceo.reverseGeocodeLocation(loc, completionHandler:
+            {(placemarks, error) in
+                if (error != nil)
+                {
+                    print("reverse geodcode fail: \(error!.localizedDescription)")
+                }
+                let pm = placemarks! as [CLPlacemark]
+
+                if pm.count > 0 {
+                    let result = placemarks![0].locality
+                    
+                    delegate!.didGetAddressFromLatLon(city: result ?? "")
+                }
+            })
+        
+    }
+}
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
     }
 }
 

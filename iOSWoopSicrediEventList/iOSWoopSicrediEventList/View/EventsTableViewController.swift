@@ -19,7 +19,6 @@ class EventsTableViewController: UITableViewController {
     
     private let bag = DisposeBag()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
