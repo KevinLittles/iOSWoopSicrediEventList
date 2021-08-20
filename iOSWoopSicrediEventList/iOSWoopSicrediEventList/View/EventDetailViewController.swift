@@ -38,8 +38,6 @@ class EventDetailViewController: UIViewController {
         eventDetailHandler.delegate = self
         self.title = EventDetailHandler.event?.title
         
-        //tableView.tableFooterView = UIView()
-        
         setupScrollView()
         setupEventImageView()
         setupTextViewsAndLabels()
@@ -214,6 +212,9 @@ class EventDetailViewController: UIViewController {
     
     @objc func checkinButtonAction(sender: UIButton!) {
         
+        //Abaixo, deveria subir um popup para preencher os dados, seriam eles: eventId, name, email. Assim como o modelo "CheckinModel"
+        
+        //checkinHandler.postCheckin(checkin: <#T##CheckinModel#>) ---> Essa função faria o checkin do interessado, fazendo um POST com o objeto CheckinModel transformado em JSON
     }
     
 }

@@ -20,8 +20,6 @@
 		64B9CC3326CB2C2E0064F5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC3226CB2C2E0064F5E7 /* SceneDelegate.swift */; };
 		64B9CC3A26CB2C310064F5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3926CB2C310064F5E7 /* Assets.xcassets */; };
 		64B9CC3D26CB2C310064F5E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64B9CC3B26CB2C310064F5E7 /* LaunchScreen.storyboard */; };
-		64B9CC4826CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC4726CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift */; };
-		64B9CC5326CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */; };
 		64B9CC6526CB2DAE0064F5E7 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */; };
 		64B9CC6E26CB50F20064F5E7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */; };
 		AF6B9476134E8AB194CB80EF /* Pods_iOSWoopSicrediEventListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DAFBDC57CBB8987C5CD4EB /* Pods_iOSWoopSicrediEventListTests.framework */; };
@@ -63,11 +61,7 @@
 		64B9CC3C26CB2C310064F5E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64B9CC3E26CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9CC4326CB2C310064F5E7 /* iOSWoopSicrediEventListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSWoopSicrediEventListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64B9CC4726CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWoopSicrediEventListTests.swift; sourceTree = "<group>"; };
-		64B9CC4926CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9CC4E26CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSWoopSicrediEventListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWoopSicrediEventListUITests.swift; sourceTree = "<group>"; };
-		64B9CC5426CB2C310064F5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9CC6326CB2DAE0064F5E7 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		64B9CC6D26CB50F20064F5E7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		66D294445C38C39D3DC67704 /* Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests/Pods-iOSWoopSicrediEventList-iOSWoopSicrediEventListUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				64B9CC2F26CB2C2E0064F5E7 /* iOSWoopSicrediEventList */,
-				64B9CC4626CB2C310064F5E7 /* iOSWoopSicrediEventListTests */,
-				64B9CC5126CB2C310064F5E7 /* iOSWoopSicrediEventListUITests */,
 				64B9CC2E26CB2C2E0064F5E7 /* Products */,
 				AD5BAF54CBF19FA9FAAFE966 /* Pods */,
 				5DCA700384062A02F8A97727 /* Frameworks */,
@@ -156,24 +148,6 @@
 				64B9CC6926CB2F4F0064F5E7 /* View */,
 			);
 			path = iOSWoopSicrediEventList;
-			sourceTree = "<group>";
-		};
-		64B9CC4626CB2C310064F5E7 /* iOSWoopSicrediEventListTests */ = {
-			isa = PBXGroup;
-			children = (
-				64B9CC4726CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift */,
-				64B9CC4926CB2C310064F5E7 /* Info.plist */,
-			);
-			path = iOSWoopSicrediEventListTests;
-			sourceTree = "<group>";
-		};
-		64B9CC5126CB2C310064F5E7 /* iOSWoopSicrediEventListUITests */ = {
-			isa = PBXGroup;
-			children = (
-				64B9CC5226CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift */,
-				64B9CC5426CB2C310064F5E7 /* Info.plist */,
-			);
-			path = iOSWoopSicrediEventListUITests;
 			sourceTree = "<group>";
 		};
 		64B9CC6726CB2F330064F5E7 /* Model */ = {
@@ -492,7 +466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B9CC4826CB2C310064F5E7 /* iOSWoopSicrediEventListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +473,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B9CC5326CB2C310064F5E7 /* iOSWoopSicrediEventListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

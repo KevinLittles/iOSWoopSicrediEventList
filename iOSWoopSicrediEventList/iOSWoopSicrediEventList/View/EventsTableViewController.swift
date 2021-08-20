@@ -22,10 +22,13 @@ class EventsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Eventos"
+        
         tableView.delegate = nil
         tableView.dataSource = nil
         
         tableView.rx.setDelegate(self).disposed(by: bag)
+        tableView.tableFooterView = UIView()
         
         bindTableView()
 
