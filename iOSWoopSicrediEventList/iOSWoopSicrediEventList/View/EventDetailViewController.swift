@@ -49,13 +49,9 @@ class EventDetailViewController: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(scrollView)
 
-        //scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true;
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
-        //scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true;
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
         scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-
-        //scrollView.contentSize = contentView.frame.size
 
         setupContentView()
 
@@ -64,16 +60,12 @@ class EventDetailViewController: UIViewController {
             scrollView.addSubview(contentView)
             
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-            //contentView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-            
-            //contentView.leftAnchor.constraint(equalTo: scrollView.leftAnchor).isActive = true
-            //contentView.rightAnchor.constraint(equalTo: scrollView.rightAnchor).isActive = true
+
             contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-//
+
             contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
-            //contentView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
-            
+
         }
     }
     
@@ -180,10 +172,8 @@ class EventDetailViewController: UIViewController {
         tableView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         
-        //tableView.heightAnchor.constraint(equalToConstant: tableView.contentSize.height).isActive = true
         print(tableView.contentSize.height)
         
-        //tableView.heightAnchor.constraint(equalTo: tableView.contentLayoutGuide.heightAnchor).isActive = true
       }
     
     override func viewDidLayoutSubviews(){
@@ -200,8 +190,6 @@ class EventDetailViewController: UIViewController {
         contentView.addSubview(checkinButton)
         
         checkinButton.layer.cornerRadius = 5
-        
-        //checkinButton.frame.size.height = contentView.frame.size.height/8
         
         checkinButton.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 20).isActive = true
         checkinButton.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 100).isActive = true

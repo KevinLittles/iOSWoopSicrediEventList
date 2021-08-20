@@ -9,8 +9,6 @@ import Foundation
 import RxSwift
 import CoreLocation
 
-//showEventDetail
-
 struct ListOfEventsHandler {
     private let apiCalling = EventAPICalling()
     private let apiRequest = APIRequest(stringURL: "http://5f5a8f24d44d640016169133.mockapi.io/api/events", method: .GET)
