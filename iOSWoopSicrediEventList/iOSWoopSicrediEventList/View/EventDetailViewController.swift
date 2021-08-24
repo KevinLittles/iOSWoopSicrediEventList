@@ -46,35 +46,27 @@ class EventDetailViewController: UIViewController {
     }
     
     func setupScrollView() {
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(scrollView)
-
-        //scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true;
-        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
-        //scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true;
-        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
-        scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-
-        //scrollView.contentSize = contentView.frame.size
-
-        setupContentView()
-
+        
         func setupContentView() {
             contentView.translatesAutoresizingMaskIntoConstraints = false
             scrollView.addSubview(contentView)
             
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-            //contentView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-            
-            //contentView.leftAnchor.constraint(equalTo: scrollView.leftAnchor).isActive = true
-            //contentView.rightAnchor.constraint(equalTo: scrollView.rightAnchor).isActive = true
             contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-//
+
             contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
-            //contentView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
             
         }
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(scrollView)
+
+        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true;
+        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true;
+        scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+
+        setupContentView()
     }
     
     func setupEventImageView() {
@@ -92,9 +84,6 @@ class EventDetailViewController: UIViewController {
     }
     
     func setupTextViewsAndLabels() {
-        setupEventTitleLabel()
-        setupHorizontalStackView()
-        setupEventDescriptionLabel()
         
         func setupEventTitleLabel() {
             eventTitleLabel.text = EventDetailHandler.event?.title
@@ -114,22 +103,6 @@ class EventDetailViewController: UIViewController {
         }
         
         func setupHorizontalStackView() {
-            setupEventPriceLabel()
-            setupEventLocalLabel()
-            
-            horizontalStackView.axis = .horizontal
-            horizontalStackView.alignment = .fill // .leading .firstBaseline .center .trailing .lastBaseline
-            horizontalStackView.distribution = .fillEqually // .fillEqually .fillProportionally .equalSpacing .equalCentering
-            horizontalStackView.spacing = 5
-            horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
-            contentView.addSubview(horizontalStackView)
-            
-            horizontalStackView.frame = CGRect(x:0,y:0,width: eventLocalLabel.intrinsicContentSize.width,height: eventLocalLabel.intrinsicContentSize.height)
-            
-            horizontalStackView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-            horizontalStackView.topAnchor.constraint(equalTo: eventTitleLabel.bottomAnchor, constant: 20).isActive = true
-            
-            horizontalStackView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
             
             func setupEventPriceLabel() {
                 eventPriceLabel.text = "\((EventDetailHandler.event?.price)!)" + " $"
@@ -150,6 +123,24 @@ class EventDetailViewController: UIViewController {
                 horizontalStackView.addArrangedSubview(eventLocalLabel)
                 
             }
+            
+            setupEventPriceLabel()
+            setupEventLocalLabel()
+            
+            horizontalStackView.axis = .horizontal
+            horizontalStackView.alignment = .fill // .leading .firstBaseline .center .trailing .lastBaseline
+            horizontalStackView.distribution = .fillEqually // .fillEqually .fillProportionally .equalSpacing .equalCentering
+            horizontalStackView.spacing = 5
+            horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
+            contentView.addSubview(horizontalStackView)
+            
+            horizontalStackView.frame = CGRect(x:0,y:0,width: eventLocalLabel.intrinsicContentSize.width,height: eventLocalLabel.intrinsicContentSize.height)
+            
+            horizontalStackView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+            horizontalStackView.topAnchor.constraint(equalTo: eventTitleLabel.bottomAnchor, constant: 20).isActive = true
+            
+            horizontalStackView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
+            
         }
         
         func setupEventDescriptionLabel() {
@@ -168,6 +159,11 @@ class EventDetailViewController: UIViewController {
             eventDescriptionLabel.topAnchor.constraint(equalTo: horizontalStackView.bottomAnchor, constant: 20).isActive = true
             
         }
+        
+        setupEventTitleLabel()
+        setupHorizontalStackView()
+        setupEventDescriptionLabel()
+    
     }
     
     func setupTableView() {
@@ -180,10 +176,6 @@ class EventDetailViewController: UIViewController {
         tableView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         
-        //tableView.heightAnchor.constraint(equalToConstant: tableView.contentSize.height).isActive = true
-        print(tableView.contentSize.height)
-        
-        //tableView.heightAnchor.constraint(equalTo: tableView.contentLayoutGuide.heightAnchor).isActive = true
       }
     
     override func viewDidLayoutSubviews(){
@@ -200,8 +192,6 @@ class EventDetailViewController: UIViewController {
         contentView.addSubview(checkinButton)
         
         checkinButton.layer.cornerRadius = 5
-        
-        //checkinButton.frame.size.height = contentView.frame.size.height/8
         
         checkinButton.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 20).isActive = true
         checkinButton.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 100).isActive = true

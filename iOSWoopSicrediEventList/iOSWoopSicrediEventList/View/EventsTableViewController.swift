@@ -36,9 +36,6 @@ class EventsTableViewController: UITableViewController {
 
     func bindTableView() {
         
-        startAndLoadTableView()
-        didSelectedItemOnTableView()
-        
         func startAndLoadTableView() {
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
             
@@ -55,6 +52,10 @@ class EventsTableViewController: UITableViewController {
                 
             }).disposed(by: bag)
         }
+        
+        startAndLoadTableView()
+        didSelectedItemOnTableView()
+        
     }
     
 }
